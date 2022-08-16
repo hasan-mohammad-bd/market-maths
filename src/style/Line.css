@@ -1,5 +1,5 @@
 .line{
-    margin-top: 10px;
+    margin: 15px 0;
     width: 200px;
     height: 4px;
     background-color: #DAA106;
@@ -7,6 +7,13 @@
 .small-line{
     margin: 10px 0;
     width: 200px;
+    height: 2px;
+    background-color: #DAA106;
+}
+
+.extra-small-line{
+    margin: 8px 0;
+    width: 40px;
     height: 2px;
     background-color: #DAA106;
 }

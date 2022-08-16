@@ -20,7 +20,7 @@ const WhySpecial = () => {
           <div className="flex justify-center">
             <Line className="mb-3" />
           </div>
-          <p className="my-10 font-semibold text-[18px]">
+          <p className="mb-10 font-semibold text-[18px]">
             You can relay on our amazing features list and also our customer
             services <br /> will be great experience for you without doubt and
             in no-time
