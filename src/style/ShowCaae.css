@@ -1,0 +1,15 @@
+
+
+.black-transparent{
+    background-color: rgba(0, 0, 0, 0.219);
+    height: 80vh;
+    width: 100%;
+}
+
+.cover-pic{
+    background-image: url(../image/show-case1.jpg);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}

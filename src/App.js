@@ -1,7 +1,8 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import FullHeader from "./components/header/FullHeader";
-import Home from "./components/home/Home";
+import Home from "./page/home/Home";
+
 
 const App = () => {
   return (
