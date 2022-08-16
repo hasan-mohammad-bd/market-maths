@@ -1,15 +1,19 @@
 
 
 .black-transparent{
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(0, 0, 0, 0.623);
     height: 80vh;
     width: 100%;
 }
 
 .cover-pic{
-    background-image: url(../image/show-case1.jpg);
+    background-image: url(../image/show-case.jpg);
     height: 80vh;
     width: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.cover-pic h1 {
+    line-height: 3.5rem;
 }
