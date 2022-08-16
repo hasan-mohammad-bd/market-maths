@@ -1,5 +1,12 @@
 .line{
-    width: 250px;
-    height: 5px;
+    margin-top: 10px;
+    width: 200px;
+    height: 4px;
+    background-color: #DAA106;
+}
+.small-line{
+    margin: 10px 0;
+    width: 200px;
+    height: 2px;
     background-color: #DAA106;
 }

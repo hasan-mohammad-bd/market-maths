@@ -9,7 +9,7 @@ const WhyUs = () => {
         <>
             <div className="container mx-auto flex justify-between items-center">
                 <div className="img-holder max-w-[600px] my-10"><img src={pc} alt="" /></div>
-                <div className="text text-[48px]">
+                <div className="text text-[38px] font-semibold">
                     <h2>Why We <span className='text-[#DAA106]'>Extra Ordinary</span></h2>
                     <Line/>
                     <p className="my-6 text-[16px] text-black max-w-[600px]">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no time and with great quality for design. You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality for design relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality for design. relay on our amazing features list and also our customer services features list and also our customer services</p>
