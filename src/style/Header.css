@@ -1,0 +1,20 @@
+.intersect{
+    box-shadow: 12px 0px 0px 0px #FEB20D;
+
+}
+
+.activeRoute{
+    margin-left: 70px;
+    color: #FEB20D;
+}
+.inactiveRoute{
+    margin-left: 70px;
+    color:#091744;
+}
+
+.login{
+    padding: 5px 30px;
+    background-color: #091744;
+    color: white;
+    border-radius: 20px;
+}
