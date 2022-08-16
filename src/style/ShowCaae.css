@@ -17,3 +17,23 @@
 .cover-pic h1 {
     line-height: 3.5rem;
 }
+
+/* button */
+
+.btn {
+    display: flex;
+    padding: 5px 5px;
+    width: 200px;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 30px;
+    background-color: #DAA106;
+    font-size: 20px;
+    
+}
+
+.btn .fas {
+    font-size: 40px;
+
+}
+

@@ -1,10 +1,14 @@
 import React from 'react';
 import ShowCase from '../../components/showCase/ShowCase';
+import WhySpecial from '../../components/whySpecial/WhySpecial';
+import WhyUs from '../../components/whyUs/WhyUs';
 
 const Home = () => {
     return (
         <>
             <ShowCase/>
+            <WhyUs/>
+            <WhySpecial/>
         </>
     );
 };
