@@ -1,4 +1,6 @@
 import React from 'react';
+import AwesomeFacts from '../../components/awesomeFacts/AwesomeFacts';
+import GrowWithUs from '../../components/growWithUs/GrowWithUs';
 import LiveRate from '../../components/liveRate/LiveRate';
 import Pricing from '../../components/pricing/Pricing';
 import ShowCase from '../../components/showCase/ShowCase';
@@ -13,6 +15,8 @@ const Home = () => {
             <WhySpecial/>
             <LiveRate/>
             <Pricing/>
+            <AwesomeFacts/>
+            <GrowWithUs/>
         </>
     );
 };

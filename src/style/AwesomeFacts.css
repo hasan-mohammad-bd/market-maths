@@ -1,0 +1,7 @@
+
+.cover-pic3{
+    background-image: url(../image/sky-cover.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
