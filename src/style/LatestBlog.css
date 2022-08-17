@@ -1,9 +1,9 @@
-.single-blog, .img-holder-blog{
+.img-holder-blog{
     border-radius: 5px;
 }
 
 .single-blog{
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     transition: box-shadow 0.3s ease-in;
 }
 

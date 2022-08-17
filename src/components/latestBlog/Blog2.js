@@ -31,10 +31,10 @@ const Blog2 = () => {
         </div>
         <NavLink
           className="bg-[#092744] ml-4 mt-8 text-white px-[15px] py-[5px] flex flex-grow-0 max-w-[150px] items-center read-btn"
-          to="/login"
+          to="/"
         >
-          {" "}
-          Read more{" "}
+
+          Read more
           <span className="ml-4">
             <AiOutlineArrowRight />
           </span>

@@ -1,0 +1,9 @@
+.news-letter-input{
+    border-radius: 5px 0 0 5px;
+    outline: 0;
+}
+
+.news-letter-submit{
+    border-radius: 0 5px 5px 0;
+}
+

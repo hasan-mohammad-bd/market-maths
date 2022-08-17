@@ -4,6 +4,7 @@ import CustomersFeedback from '../../components/customersFeedback/CustomersFeedb
 import GrowWithUs from '../../components/growWithUs/GrowWithUs';
 import LatestBlog from '../../components/latestBlog/LatestBlog';
 import LiveRate from '../../components/liveRate/LiveRate';
+import NewLetter from '../../components/newLetter/NewLetter';
 import Pricing from '../../components/pricing/Pricing';
 import ShowCase from '../../components/showCase/ShowCase';
 import WhySpecial from '../../components/whySpecial/WhySpecial';
@@ -21,6 +22,7 @@ const Home = () => {
             <GrowWithUs/>
             <CustomersFeedback/>
             <LatestBlog/>
+            <NewLetter/>
         </>
     );
 };
