@@ -18,7 +18,7 @@ const GrowWithUs = () => {
           </p>
         </div>
         <div className="chart">
-            <img className="mx-auto" src={cheart} alt="" />
+            <img className="mx-auto w-100" src={cheart} alt="" />
         </div>
       </div>
     </>

@@ -1,0 +1,21 @@
+.single-blog, .img-holder-blog{
+    border-radius: 5px;
+}
+
+.single-blog{
+    padding-bottom: 25px;
+    transition: box-shadow 0.3s ease-in;
+}
+
+.single-blog:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.single-blog:hover  .read-btn{
+    background-color: #DAA106;
+}
+
+.read-btn{
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in;
+
+}

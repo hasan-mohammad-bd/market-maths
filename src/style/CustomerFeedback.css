@@ -1,0 +1,23 @@
+.cover-pic4{
+    background-image: url(../image/earth.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.quotation{
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #092744;
+}
+
+.quotation-first{
+    transform: rotate(90deg);
+}
+
+.avatar-feedback{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
