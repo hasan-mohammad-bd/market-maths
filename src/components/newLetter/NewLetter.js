@@ -11,7 +11,7 @@ const NewLetter = () => {
         <>
             <div style={{ background: `url(${phone})`, backgroundSize: "cover", backgroundPosition: "center" }} className="py-16 flex flex-col md:flex-row items-center justify-around">
                 <div className="input-value mb-28 md:mb-0">
-                    <div className="text flex text-white mb-12">
+                    <div className="text flex items-center text-white mb-12">
                         <IoMdPaperPlane className='text-[50px]'/>
                         <div className="text">
                             <h3 className='text-[23px] ml-3 font-semibold text-start'>Sign up for Newsletter</h3>
