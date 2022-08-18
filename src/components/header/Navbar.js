@@ -6,7 +6,7 @@ import { FiLogIn } from "@react-icons/all-files/fi/FiLogIn";
 const Navbar = () => {
     return (
         <>
-            <div className="container mx-auto font-semibold py-3 mr-24">
+            <div className="container mx-auto font-semibold py-3 mr-24 hidden md:block">
                 <nav className='flex justify-end items-center'>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/">Home</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/about">About Us</NavLink>

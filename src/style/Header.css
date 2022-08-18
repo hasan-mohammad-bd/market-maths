@@ -11,10 +11,45 @@
     margin-left: 70px;
     color:#091744;
 }
+.hactiveRoute{
+
+    color: #FEB20D;
+    margin-bottom: 5px;
+}
+.hinactiveRoute{
+
+    color:#091744;
+    margin-bottom: 5px;
+}
+.sactiveRoute{
+
+    color: #FEB20D;
+
+}
+.sinactiveRoute{
+
+    color:#091744;
+
+}
 
 .login{
     padding: 5px 30px;
     background-color: #091744;
     color: white;
     border-radius: 20px;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 1rem;
+    /* font-family: 'Beau Rivage', cursive; */
+    color: #fcf1df;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+
+}
+
+nav a:hover {
+    transform: translateY(3px);
+    color: #dac393;
 }

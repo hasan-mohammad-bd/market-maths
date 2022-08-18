@@ -8,9 +8,9 @@ const ShowCase = () => {
     <>
       <div className="cover-pic bg-black">
         <div className="black-transparent mx-auto flex justify-center items-center">
-          <div className="container mx-auto flex justify-between items-center my-auto ">
+          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center my-auto ">
             <div className="text  text-white">
-              <h1 className="text-[52px] font-extrabold">
+              <h1 className="lg:text-[52px] text-[38px] font-extrabold">
                 Want to grow <br />
                 your Investments <br />
                 with us?

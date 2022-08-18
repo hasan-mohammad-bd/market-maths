@@ -13,22 +13,46 @@ const Contract = () => {
     <>
       <div className="contact mb-8 md:mb-0">
         <h3 className="text-[20px] font-bold text-[#092744] ">
-            Contact Details
+          Contact Details
         </h3>
         <ExtraSmallLine className="mb-3" />
         <div className="list text-[14px]">
-            <div className='mb-4 flex items-center'><MdPlace className="text-[25px] text-[#DAA106] "/> <p className="text-gray-600 font-semibold ml-3"> 9255 Wintergreen Street, New York <br /> Dracut, MA 01826, USA</p></div>
+          <div className="mb-4 flex items-center">
+            <MdPlace className="text-[25px] text-[#DAA106] " />{" "}
+            <p className="text-gray-600 font-semibold ml-3">
+              {" "}
+              9255 Wintergreen Street, New York <br /> Dracut, MA 01826, USA
+            </p>
+          </div>
 
-            <div className='mb-4 flex items-center'><AiOutlineMail className="text-[25px] text-[#DAA106] "/> <p className="text-gray-600 font-semibold ml-3">info@marketmaths.com</p></div>
+          <div className="mb-4 flex items-center">
+            <AiOutlineMail className="text-[25px] text-[#DAA106] " />{" "}
+            <p className="text-gray-600 font-semibold ml-3">
+              info@marketmaths.com
+            </p>
+          </div>
 
-            <div className='mb-4 flex items-center'><MdCall className="text-[25px] text-[#DAA106] "/> <p className="text-gray-600 font-semibold ml-3">(+123) 123 456 7890</p></div>
+          <div className="mb-4 flex items-center">
+            <MdCall className="text-[25px] text-[#DAA106] " />{" "}
+            <p className="text-gray-600 font-semibold ml-3">
+              (+123) 123 456 7890
+            </p>
+          </div>
 
-            <div className='mb-4 mt-8 text-[#DAA106] flex items-center justify-between text-[25px] w-[180px]'>
-                <GrFacebookOption/>
-                <AiOutlineTwitter/>
-                <FaLinkedinIn/>
-                <FaInstagram/>
-            </div>
+          <div className="mb-4 mt-8 text-[#DAA106] flex items-center justify-between text-[25px] w-[180px]">
+            <a href="">
+              <GrFacebookOption />
+            </a>
+            <a href="">
+              <AiOutlineTwitter />
+            </a>
+            <a href="">
+              <FaLinkedinIn />
+            </a>
+            <a href="">
+              <FaInstagram />
+            </a>
+          </div>
         </div>
       </div>
     </>

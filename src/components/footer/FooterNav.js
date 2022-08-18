@@ -9,14 +9,14 @@ const FooterNav = () => {
           <div className="copy-right-text text-gray-600 text-[14px]">
             <p>&copy; Market Maths. All Right Reserved</p>
           </div>
-          <nav className="text-center md:text-start mt-4 md:mt-0 uppercase text-[16px] font-semibold text-[#092744]">
+          <div className="text-center md:text-start mt-4 md:mt-0 uppercase text-[16px] font-semibold text-[#092744]">
             <Link className="ml-10" to='/'>Home</Link>
             <Link className="ml-10" to='/'>About</Link>
             <Link className="ml-10" to='/'>Terms & condition</Link>
             <Link className="ml-10" to='/'>Privacy Policy</Link>
-            <Link className="ml-10" to='/'>Contract</Link>
+            <Link className="ml-10" to='/'>contact</Link>
 
-          </nav>
+          </div>
         </div>
       </div>
     </>

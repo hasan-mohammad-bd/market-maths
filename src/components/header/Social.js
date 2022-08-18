@@ -7,7 +7,7 @@ import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 
 const Social = () => {
   return (
-    <div className="social bg-[#28303B] text-white h-[30px] text-[14px] flex items-center">
+    <div className="social bg-[#28303B] text-white h-[30px] text-[14px] items-center hidden md:flex">
       <div className="container mx-auto h-100 flex justify-between items-center">
         <div className="welcome flex justify-between">
           <div className="">Welcome to Market Maths!</div>

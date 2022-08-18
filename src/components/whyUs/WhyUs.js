@@ -7,7 +7,7 @@ import { FaArrowCircleRight } from "@react-icons/all-files/fa/FaArrowCircleRight
 const WhyUs = () => {
     return (
         <>
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
                 <div className="img-holder max-w-[600px] my-10"><img src={pc} alt="" /></div>
                 <div className="text text-[38px]">
                     <h2>Why We <span className='text-[#DAA106]'>Extra Ordinary</span></h2>

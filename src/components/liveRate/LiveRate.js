@@ -7,7 +7,7 @@ const LiveRate = () => {
     <>
       <div className="cover-pic2">
         <div className="black-transparent flex">
-          <div className="container mx-auto flex justify-between items-center">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div className="text">
               <h2 className="text-[38px] font-semibold text-white">
                 Forex <span className="text-[#DAA106]">Live Rate</span>

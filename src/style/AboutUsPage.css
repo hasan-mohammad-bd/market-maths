@@ -1,0 +1,46 @@
+.border-about{
+    border-bottom: 1px solid black;
+}
+
+.hover-effect-member{
+
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    transition: background-color 0.3s ease-in;
+    background-color: transparent;
+
+    
+}
+
+.hover-effect-member:hover{
+    background-color: rgba(0, 0, 0, 0.445);
+
+}
+
+.social-icon-member {
+    color:transparent;
+    transition: background-color 0.3s ease-in;
+
+    
+}
+
+.social-icon-member a {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in;
+}
+
+
+.hover-effect-member:hover .social-icon-member{
+    color: #DAA106;
+    
+}
+.hover-effect-member:hover .social-icon-member > a{
+    background-color: white;
+    
+}
+
+.logo-round{
+    border-radius: 50%;
+}
