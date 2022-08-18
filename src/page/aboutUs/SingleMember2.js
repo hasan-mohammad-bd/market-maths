@@ -4,6 +4,7 @@ import { GrFacebookOption } from "@react-icons/all-files/gr/GrFacebookOption";
 import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
+import '../../style/AboutUsPage.css';
 
 const SingleMember2 = () => {
   return (

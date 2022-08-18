@@ -35,11 +35,11 @@ const Header = () => {
           </div>
           <nav className={`lg-flex grid grid-cols-1 lg:hidden z-20 bg-[#092744] p-5 right-10 absolute lg:static ${menu ? 'top-20': 'top-[-250px]'}`}>
           <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/">Home</NavLink>
-          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/">About Us</NavLink>
-          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/">FX Live Charts</NavLink>
-          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/">Forex Calender</NavLink>
-          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/">Blog</NavLink>
-          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/">Contact Us</NavLink>
+          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/about">About Us</NavLink>
+          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/live">FX Live Charts</NavLink>
+          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/calender">Forex Calender</NavLink>
+          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/blog">Blog</NavLink>
+          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/contact">Contact Us</NavLink>
           <NavLink className="login flex items-center " to="/login"><span className='mr-2'><FiLogIn/></span> log In</NavLink>
           </nav>
           <div className="icon-details items-center w-[700px] justify-between mx-auto hidden lg:flex">

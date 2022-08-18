@@ -16,12 +16,22 @@
 
 .hover-effect-member:hover{
     background-color: rgba(0, 0, 0, 0.445);
+    
 
+}
+
+.single-team-member{
+    padding-bottom: 20px;
+    transition: box-shadow 0.3s ease-in;
+}
+
+.single-team-member:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .social-icon-member {
     color:transparent;
-    transition: background-color 0.3s ease-in;
+    transition: color 0.3s ease-in;
 
     
 }

@@ -11,7 +11,7 @@ const Navbar = () => {
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/">Home</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/about">About Us</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/live">FX Live Charts</NavLink>
-                <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/calender">Forex Calender</NavLink>
+                <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/calendar">Forex Calender</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/blog">Blog</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/contact">Contact Us</NavLink>
                 <NavLink className="login ml-[70px] flex items-center " to="/login"><span className='mr-2'><FiLogIn/></span> log In</NavLink>
