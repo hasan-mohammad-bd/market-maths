@@ -16,7 +16,7 @@ const Contract = () => {
             Contact Details
         </h3>
         <ExtraSmallLine className="mb-3" />
-        <div className="list">
+        <div className="list text-[14px]">
             <div className='mb-4 flex items-center'><MdPlace className="text-[25px] text-[#DAA106] "/> <p className="text-gray-600 font-semibold ml-3"> 9255 Wintergreen Street, New York <br /> Dracut, MA 01826, USA</p></div>
 
             <div className='mb-4 flex items-center'><AiOutlineMail className="text-[25px] text-[#DAA106] "/> <p className="text-gray-600 font-semibold ml-3">info@marketmaths.com</p></div>
@@ -29,9 +29,6 @@ const Contract = () => {
                 <FaLinkedinIn/>
                 <FaInstagram/>
             </div>
-
-
-
         </div>
       </div>
     </>
