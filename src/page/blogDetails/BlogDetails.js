@@ -9,8 +9,7 @@ import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import "../../style/BlogPage.css";
-import SingleBlog from "./SingleBlog";
-import SingleBlog2 from "./SingleBlog2";
+import SingleBlogDetails from "./SingleBlogDetails";
 
 const Blog = () => {
   return (
@@ -27,7 +26,7 @@ const Blog = () => {
           <div className="container mx-auto">
             <div className="text md:ml-16">
               <h3 className="mb-3 text-[38px] font-semibold text-white">
-                Our Blogs
+                Blog Details
               </h3>
               <p className="text-white">
                 Our goal here is to provide low prices on accurate signal <br />{" "}
@@ -51,9 +50,9 @@ const Blog = () => {
           className={({ isActive }) =>
             isActive ? "sactiveRoute" : "sinactiveRoute"
           }
-          to="/blog"
+          to="/blog-details"
         >
-          Our Blogs
+          Blog Details
         </NavLink>
       </div>
       <div className="container mx-auto flex flex-col lg:flex-row">
@@ -227,9 +226,8 @@ const Blog = () => {
             </form>
           </div>
         </div>
-        <div className="blogs flex-1 ml-0 lg:ml-16">
-          <SingleBlog/>
-          <SingleBlog2/>
+        <div className="blogs flex-1 ml-16">
+          <SingleBlogDetails />
         </div>
       </div>
     </>

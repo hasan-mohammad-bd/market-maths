@@ -15,7 +15,7 @@ const Blog1 = () => {
         ></div>
         <div className="date p-4 flex items-center text-gray-500 text-[16px]">
           <BiCalendar className="  mr-2" /> <p>21 March , 2022</p>{" "}
-          <p className="ml-3 text-[#DAA106]">/FoDEX</p>
+          <p className="ml-3 text-[#DAA106]">/FoREX</p>
         </div>
         <div className="text px-4 text-left">
           <h3 className="text-[22px] font-semibold text-[#092744] mb-5">
