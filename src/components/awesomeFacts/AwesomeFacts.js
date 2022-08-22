@@ -17,7 +17,7 @@ const AwesomeFacts = () => {
                         <div className="image-holder">
                             <img src={rocket} alt="" />
                         </div>
-                        <Link className="btn text-white mt-5" to="/"><span className="button-text ml-8 font-semibold text-[16px]">Register Now</span><span> <FaArrowCircleRight className="fas"/></span></Link>
+                        <Link className="btn-big text-white mt-5" to="/"><span className="button-text ml-8 font-semibold text-[16px]">Register Now</span><span> <FaArrowCircleRight className="fas"/></span></Link>
                     </div>
                     <div className="text text-center md:text-right text-white mt-16">
                         <h3 className='uppercase font-bold text-[25px]'>The market maths</h3>

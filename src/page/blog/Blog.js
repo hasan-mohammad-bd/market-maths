@@ -65,49 +65,54 @@ const Blog = () => {
             <ExtraSmallLine />
             <ul>
               <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Digital Trading</p>{" "}
+                <NavLink to='/blog-details'><p className="text-gray-600">Digital Trading</p></NavLink>
                 <p className="text-gray-500">(3)</p>
               </li>
               <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Forex</p>{" "}
+                <NavLink to='/blog-details'><p className="text-gray-600">Forex</p></NavLink>
+                <p className="text-gray-500">(3)</p>
+              </li>
+              <li className="flex items-center justify-between py-3 border-b-[1px]">
+                <NavLink to='/blog-details'><p className="text-gray-600">Stock Market</p></NavLink>
+                <p className="text-gray-500">(8)</p>
+              </li>
+              <li className="flex items-center justify-between py-3 border-b-[1px]">
+                <NavLink to='/blog-details'><p className="text-gray-600">International</p></NavLink>
+                <p className="text-gray-500">(5)</p>
+              </li>
+              <li className="flex items-center justify-between py-3 border-b-[1px]">
+                <NavLink to='/blog-details'><p className="text-gray-600">Market</p></NavLink>
                 <p className="text-gray-500">(4)</p>
               </li>
               <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Stock Market</p>{" "}
+                <NavLink to='/blog-details'><p className="text-gray-600">Currency Exchange</p></NavLink>
+                <p className="text-gray-500">(2)</p>
+              </li>
+              <li className="flex items-center justify-between py-3 border-b-[1px]">
+                <NavLink to='/blog-details'><p className="text-gray-600">Trading</p></NavLink>
+                <p className="text-gray-500">(3)</p>
+              </li>
+              <li className="flex items-center justify-between py-3 border-b-[1px]">
+                <NavLink to='/blog-details'><p className="text-gray-600">Freelance</p></NavLink>
+                <p className="text-gray-500">(3)</p>
+              </li>
+              <li className="flex items-center justify-between py-3 border-b-[1px]">
+                <NavLink to='/blog-details'><p className="text-gray-600">Digital Trading</p></NavLink>
+                <p className="text-gray-500">(4)</p>
+              </li>
+              <li className="flex items-center justify-between py-3 border-b-[1px]">
+                <NavLink to='/blog-details'><p className="text-gray-600">Local Market</p></NavLink>
                 <p className="text-gray-500">(5)</p>
               </li>
               <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">International</p>{" "}
-                <p className="text-gray-500">(3)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Market</p>{" "}
-                <p className="text-gray-500">(10)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Currency Exchange</p>{" "}
-                <p className="text-gray-500">(3)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Digital Trading</p>{" "}
-                <p className="text-gray-500">(5)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Trading</p>{" "}
-                <p className="text-gray-500">(3)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Freelance</p>{" "}
+                <NavLink to='/blog-details'><p className="text-gray-600">Analysis</p></NavLink>
                 <p className="text-gray-500">(6)</p>
               </li>
               <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">Analysis</p>{" "}
-                <p className="text-gray-500">(1)</p>
+                <NavLink to='/blog-details'><p className="text-gray-600">World Trade</p></NavLink>
+                <p className="text-gray-500">(2)</p>
               </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <p className="text-gray-600">World Trade</p>{" "}
-                <p className="text-gray-500">(9)</p>
-              </li>
+
             </ul>
           </div>
           <div className="border-b-[1px] mt-8 border-gray-300"></div>

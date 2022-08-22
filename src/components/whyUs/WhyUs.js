@@ -13,7 +13,7 @@ const WhyUs = () => {
                     <h2>Why We <span className='text-[#DAA106]'>Extra Ordinary</span></h2>
                     <Line/>
                     <p className="my-6 text-[16px] text-black max-w-[600px]">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no time and with great quality for design. You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality for design relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality for design. relay on our amazing features list and also our customer services features list and also our customer services</p>
-                    <Link className="btn text-white" to="/"><span className="button-text ml-8 font-semibold text-[16px]">Register Now</span><span> <FaArrowCircleRight className="fas"/></span></Link>
+                    <Link className="btn-big text-white" to="/"><span className="button-text ml-8 font-semibold text-[16px]">Register Now</span><span> <FaArrowCircleRight className="fas"/></span></Link>
                 </div>
             </div>
         </>

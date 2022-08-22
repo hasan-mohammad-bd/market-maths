@@ -17,7 +17,7 @@ const ShowCase = () => {
               </h1>
               <p className="my-6 text-[18px]">With 10+ years of experience in the industry, we proved that the <br /> 
               combination of strategic thinking and expertise create a fascinating <br /> experience</p>
-              <Link className="btn" to="/"><span className="button-text ml-8 font-semibold text-[16px]">Know More</span><span> <FaArrowCircleRight className="fas"/></span></Link>
+              <Link className="btn-big" to="/"><span className="button-text ml-8 font-semibold text-[16px]">Know More</span><span> <FaArrowCircleRight className="fas"/></span></Link>
             </div>
 
             <div className="form">

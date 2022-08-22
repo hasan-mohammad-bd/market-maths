@@ -5,6 +5,7 @@ import FullHeader from "./components/header/FullHeader";
 import AboutUs from "./page/aboutUs/AboutUs";
 import Blog from "./page/blog/Blog";
 import BlogDetails from "./page/blogDetails/BlogDetails";
+import Contact from "./page/contact/Contact";
 import ForexCalendar from "./page/forexCalendar/ForexCalendar";
 import Home from "./page/home/Home";
 import LiveChart from "./page/liveChart/LiveChart";
@@ -23,7 +24,7 @@ const App = () => {
         <Route path="/live" element={<LiveChart/>}></Route>
         <Route path="/live" element={<LiveChart/>}></Route>
         <Route path="/calendar" element={<ForexCalendar/>}></Route>
-
+        <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
         {/* demo for blog details */}
         <Route path="/blog-details" element={<BlogDetails/>}></Route>

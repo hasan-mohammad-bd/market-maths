@@ -20,7 +20,7 @@
 
 /* button */
 
-.btn {
+.btn-big {
     display: flex;
     padding: 5px 5px;
     width: 200px;
@@ -32,7 +32,7 @@
     
 }
 
-.btn .fas {
+.btn-big .fas {
     font-size: 40px;
 
 }

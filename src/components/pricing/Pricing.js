@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 const Pricing = () => {
   return (
     <>
-      <div className="pricing mx-auto text-center py-16">
+      <div className="pricing mx-auto text-center py-16 container">
         <div className="text">
           <h2 className="text-[38px] font-semibold">
             Simple <span className="text-[#DAA106]">Pricing Plan</span>
@@ -22,7 +22,7 @@ const Pricing = () => {
             We offer 100% satisfaction and Money back Guarantee
           </p>
         </div>
-        <div className="card  grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="card  grid grid-cols-1 md:grid-cols-4 gap-10 py-10 ">
           <div className="single-card2 p-10">
             <h3 className="font-extrabold text-[#444444] text-[20px]">Basic</h3>
             <div className="flex justify-center">

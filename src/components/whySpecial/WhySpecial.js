@@ -26,7 +26,7 @@ const WhySpecial = () => {
             in no-time
           </p>
 
-          <div className="card grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="special-card grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="single-card text-center bg-white p-8">
               <img className="max-w-[80px] mx-auto" src={antiner} alt="" />
               <h3 className="uppercase card-header font-semibold text-[25px] text-[#092744]">
