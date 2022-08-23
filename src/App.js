@@ -9,6 +9,8 @@ import Contact from "./page/contact/Contact";
 import ForexCalendar from "./page/forexCalendar/ForexCalendar";
 import Home from "./page/home/Home";
 import LiveChart from "./page/liveChart/LiveChart";
+import LoginPage from "./page/loginPage/LoginPage";
+import SignUp from "./page/signUp/SignUpPage";
 
 
 
@@ -28,6 +30,8 @@ const App = () => {
         <Route path="/blog" element={<Blog/>}></Route>
         {/* demo for blog details */}
         <Route path="/blog-details" element={<BlogDetails/>}></Route>
+        <Route path="/login" element={<LoginPage/>}></Route>
+        <Route path="/signup" element={<SignUp/>}></Route>
       </Routes>
       <Footer/>
     </>

@@ -18,7 +18,7 @@ const Navbar = () => {
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/calendar">Forex Calender</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/blog">Blog</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/contact">Contact Us</NavLink>
-                <label htmlFor="my-modal-4" class=""><span  className="login-btn-header ml-[70px] flex items-center"><span className='mr-2'><FiLogIn/></span>log In</span></label>
+                <NavLink to='/login' class=""><span  className="login-btn-header ml-[70px] flex items-center"><span className='mr-2'><FiLogIn/></span>log In</span></NavLink>
                 </nav>
 
             </div>
