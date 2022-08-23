@@ -119,7 +119,7 @@ const SignUpPage = () => {
   <label className="text-[14px]" for="terms"> I agree to <span className='text-blue-500'>terms and conditions and privacy and policy</span></label>
             </div>
             
-            <div className="logo-submit flex justify-between items-center my-2">
+            <div className="logo-submit mt-10 flex justify-between items-center my-2">
               <div className="login-btn">
                 <input
                   className="w-[150px] h-[50px] bg-[#DAA106] text-white font-semibold"
@@ -137,7 +137,7 @@ const SignUpPage = () => {
               type="submit"
             >
               <IoIosArrowForward />
-            </button>{" "}
+            </button>
             <span>Have an Account</span>
           </NavLink>
           </form>
