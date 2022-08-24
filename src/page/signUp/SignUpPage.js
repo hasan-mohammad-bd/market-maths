@@ -5,6 +5,7 @@ import { AiFillLock } from "@react-icons/all-files/ai/AiFillLock";
 import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
 import { FaUserAlt } from "@react-icons/all-files/fa/FaUserAlt";
 import { NavLink } from "react-router-dom";
+import TermsConditionsModal from '../../components/termsConditions/TermsConditionsModal';
 
 const SignUpPage = () => {
     return (
@@ -115,8 +116,9 @@ const SignUpPage = () => {
               />
             </div>
             <div className="flex items-center">
+
             <input className='w-5 h-4 mr-2' type="checkbox" id="terms" name="terms" value="terms"/>
-  <label className="text-[14px]" for="terms"> I agree to <span className='text-blue-500'>terms and conditions and privacy and policy</span></label>
+  <span className="text-[14px]" for="terms">I agree to <label className="text-blue-500 cursor-pointer" for="my-modal-6" class="">terms and conditions and privacy and policy </label></span>
             </div>
             
             <div className="logo-submit mt-10 flex justify-between items-center my-2">
@@ -131,6 +133,7 @@ const SignUpPage = () => {
                 <img className="w-100" src={logo} alt="" />
               </div>
             </div>
+
             <NavLink to='/login' className="text-center mt-5 text-[14px] font-semibold flex items-center justify-center">
             <button
               className=" text-blue-500 border border-blue-500 rounded-full mr-2"
@@ -142,6 +145,7 @@ const SignUpPage = () => {
           </NavLink>
           </form>
         </div>
+        <TermsConditionsModal/>
         </>
     );
 };
