@@ -27,7 +27,7 @@ const SingleBlog = () => {
         </h3>
         <div className="date text-gray-500 text-[14px]">
           <p>
-            Posted on <span>21 March , 2022</span>{" "}
+            Posted on <span>21 March , 2022</span>
             <span className="ml-3 text-[#DAA106]">/FOREX</span>
           </p>
         </div>
@@ -63,8 +63,8 @@ const SingleBlog = () => {
         <div className="border-b-[1px] mt-4 border-gray-300"></div>
         <div className="more-text flex justify-between items-center">
           <div className="author text-gray-500 flex items-center">
-            <p className="my-2  text-[14px]">Posted by Nima Ahmed</p>{" "}
-            <span className="mx-4">|</span>{" "}
+            <p className="my-2  text-[14px]">Posted by Nima Ahmed</p>
+            <span className="mx-4">|</span>
             <FaComment className="text-gray-300" />
             <span className="mx-2 text-[14px] text-black font-semibold">3</span>
           </div>

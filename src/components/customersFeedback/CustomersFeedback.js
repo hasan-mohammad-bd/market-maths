@@ -15,7 +15,7 @@ const CustomersFeedback = () => {
         <div className="grow-with-us mx-auto text-center py-16 text-white">
           <div className="text">
             <h2 className="text-[38px] font-semibold">
-              Checkout What{" "}
+              Checkout What
               <span className="text-[#DAA106]">Our Customers</span> Are Saying
             </h2>
             <div className="flex justify-center">

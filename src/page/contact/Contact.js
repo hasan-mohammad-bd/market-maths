@@ -29,7 +29,7 @@ const Contact = () => {
                 Contact Us
               </h3>
               <p className="text-white">
-                Our goal here is to provide low prices on accurate signal <br />{" "}
+                Our goal here is to provide low prices on accurate signal <br />
                 and excellent service.
               </p>
             </div>
@@ -120,20 +120,20 @@ const Contact = () => {
             vel hic.
           </p>
           <div className="mb-4 flex items-center">
-            <MdPlace className="text-[20px] text-[#DAA106] " />{" "}
+            <MdPlace className="text-[20px] text-[#DAA106] " />
             <p className="text-gray-600 ml-3">
-              {" "}
+              
               9255 Wintergreen Street, New York <br /> Dracut, MA 01826, USA
             </p>
           </div>
 
           <div className="mb-4 flex items-center">
-            <AiOutlineMail className="text-[20px] text-[#DAA106] " />{" "}
+            <AiOutlineMail className="text-[20px] text-[#DAA106] " />
             <p className="text-gray-600 ml-3">info@marketmaths.com</p>
           </div>
 
           <div className="mb-4 flex items-center">
-            <MdCall className="text-[20px] text-[#DAA106] " />{" "}
+            <MdCall className="text-[20px] text-[#DAA106] " />
             <p className="text-gray-600 ml-3">(+123) 123 456 7890</p>
           </div>
           <div className="contact-via-social mt-16">

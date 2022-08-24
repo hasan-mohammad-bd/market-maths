@@ -18,7 +18,7 @@ const ManagementTeam = () => {
             <Line className="mb-3" />
           </div>
           <p className="mb-10 font-semibold text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
             Voluptatibus pariatur ipsum assumenda, tempora facere non quo
             explicabo officia optio ut!
           </p>

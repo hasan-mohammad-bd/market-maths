@@ -46,21 +46,21 @@ const Header = () => {
 
             <div className="flex justify-center items-center">
               <MdPlace className="text-[30px] text-[#FEB20D]" />
-              <div className="flex flex-col ml-2 font-semibold">
+              <div className="flex flex-col ml-2 text-[14px] font-semibold">
                 <p>Jalabad, Shanker Road</p>
                 <p className="text-[#A099AC]">Malasia 1260</p>
               </div>
             </div>
             <div className="flex justify-center items-center">
               <MdCall className="text-[30px] text-[#FEB20D]" />
-              <div className="flex flex-col ml-2 font-semibold">
+              <div className="flex flex-col ml-2 text-[14px] font-semibold">
                 <p>+123-456-78900</p>
                 <p className="text-[#A099AC]">27/7 Help line</p>
               </div>
             </div>
             <div className="flex justify-center items-center">
               <AiOutlineMail className="text-[30px] text-[#FEB20D]" />
-              <div className="flex flex-col ml-2 font-semibold">
+              <div className="flex flex-col ml-2 text-[14px] font-semibold">
                 <p>marketmaths@gmail.com</p>
                 <p className="text-[#A099AC]">For Any Query</p>
               </div>

@@ -23,7 +23,7 @@ const ForexCalendar = () => {
                 Forex Calendar
               </h3>
               <p className="text-white">
-                Our goal here is to provide low prices on accurate signal <br />{" "}
+                Our goal here is to provide low prices on accurate signal <br />
                 and excellent service.
               </p>
             </div>
@@ -58,7 +58,7 @@ const ForexCalendar = () => {
             <Line />
           </div>
           <p className="font-semibold text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi
             <br /> rerum at quam, beatae reprehenderit perferendis sapiente vel
             corrupti atque.
           </p>

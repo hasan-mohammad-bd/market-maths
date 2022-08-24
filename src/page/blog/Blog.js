@@ -30,7 +30,7 @@ const Blog = () => {
                 Our Blogs
               </h3>
               <p className="text-white">
-                Our goal here is to provide low prices on accurate signal <br />{" "}
+                Our goal here is to provide low prices on accurate signal <br />
                 and excellent service.
               </p>
             </div>

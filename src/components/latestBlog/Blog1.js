@@ -14,11 +14,11 @@ const Blog1 = () => {
           className="img-holder-blog min-w-[350px] min-h-[250px]"
         ></div>
         <div className="date p-4 flex items-center text-gray-500 text-[16px]">
-          <BiCalendar className="  mr-2" /> <p>21 March , 2022</p>{" "}
+          <BiCalendar className="  mr-2" /> <p>21 March , 2022</p>
           <p className="ml-3 text-[#DAA106]">/FoREX</p>
         </div>
         <div className="text px-4 text-left">
-          <h3 className="text-[22px] font-semibold text-[#092744] mb-5">
+          <h3 className="text-[18px] font-semibold text-[#092744] mb-5">
             How to Increase Your Investments -
           </h3>
           <p className="text-[16px]">
@@ -30,7 +30,7 @@ const Blog1 = () => {
           </p>
         </div>
         <NavLink
-          className="bg-[#092744] ml-4 mt-8 text-white px-[15px] py-[5px] flex flex-grow-0 max-w-[150px] items-center read-btn"
+          className="bg-[#092744] ml-4 mt-8 text-white px-[15px] py-[5px] flex max-w-[160px] items-center read-btn"
           to="/"
         >
           Read more

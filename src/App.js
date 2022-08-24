@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import FullHeader from "./components/header/FullHeader";
@@ -31,7 +32,7 @@ const App = () => {
         {/* demo for blog details */}
         <Route path="/blog-details" element={<BlogDetails/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
-        <Route path="/signup" element={<SignUp/>}></Route>
+        <Route path="/signup" element={<SignUp/>}></Route>pp
       </Routes>
       <Footer/>
     </>

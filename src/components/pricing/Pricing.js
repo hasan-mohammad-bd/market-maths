@@ -22,7 +22,7 @@ const Pricing = () => {
             We offer 100% satisfaction and Money back Guarantee
           </p>
         </div>
-        <div className="card  grid grid-cols-1 md:grid-cols-4 gap-10 py-10 ">
+        <div className="card  grid grid-cols-1 md:grid-cols-4 gap-5 py-10 ">
           <div className="single-card2 p-10">
             <h3 className="font-extrabold text-[#444444] text-[20px]">Basic</h3>
             <div className="flex justify-center">
@@ -33,7 +33,7 @@ const Pricing = () => {
                 <span className="text-[25px] text-[#092744] font-bold mr-[2px] -translate-y-3 inline-block">
                   $
                 </span>
-                <span className="uppercase text-[42px] font-bold text-[#DAA106]">
+                <span className="uppercase text-[38px] font-bold text-[#DAA106]">
                   Free
                 </span>
                 <span>
@@ -72,7 +72,7 @@ const Pricing = () => {
                 <span className="text-[25px] text-[#092744] font-bold mr-[2px] -translate-y-3 inline-block">
                   $
                 </span>
-                <span className="uppercase text-[42px] font-bold text-[#DAA106]">
+                <span className="uppercase text-[38px] font-bold text-[#DAA106]">
                   149.00
                 </span>
                 <span>
@@ -111,7 +111,7 @@ const Pricing = () => {
                 <span className="text-[25px] text-[#092744] font-bold mr-[2px] -translate-y-3 inline-block">
                   $
                 </span>
-                <span className="uppercase text-[42px] font-bold text-[#DAA106]">
+                <span className="uppercase text-[38px] font-bold text-[#DAA106]">
                  249.00
                 </span>
                 <span>
@@ -150,7 +150,7 @@ const Pricing = () => {
                 <span className="text-[25px] text-[#092744] font-bold mr-[2px] -translate-y-3 inline-block">
                   $
                 </span>
-                <span className="uppercase text-[42px] font-bold text-[#DAA106]">
+                <span className="uppercase text-[38px] font-bold text-[#DAA106]">
                   349.00
                 </span>
                 <span>

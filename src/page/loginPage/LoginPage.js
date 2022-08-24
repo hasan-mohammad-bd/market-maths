@@ -64,7 +64,7 @@ const LoginPage = () => {
               type="submit"
             >
               <IoIosArrowForward />
-            </button>{" "}
+            </button>
             <span>Don't Have an Account</span>
           </NavLink>
         </form>

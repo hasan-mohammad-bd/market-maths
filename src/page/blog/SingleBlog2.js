@@ -27,7 +27,7 @@ const SingleBlog = () => {
             </h3>
             <div className="date text-gray-500 text-[14px]">
               <p>
-                Posted on <span>21 March , 2022</span>{" "}
+                Posted on <span>21 March , 2022</span>
                 <span className="ml-3 text-[#DAA106]">/FOREX</span>
               </p>
             </div>

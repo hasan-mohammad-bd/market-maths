@@ -12,32 +12,32 @@ const PopularCategory = () => {
         <ExtraSmallLine className="mb-3" />
         <div className="list text-[14px]">
           <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />{" "}
-            <p className="text-gray-600 font-semibold">Digital Trading</p>
+            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+            <p className="text-gray-600">Digital Trading</p>
           </div>
           <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />{" "}
-            <p className="text-gray-600 font-semibold">Forex</p>
+            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+            <p className="text-gray-600">Forex</p>
           </div>
           <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />{" "}
-            <p className="text-gray-600 font-semibold">Stock Market</p>
+            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+            <p className="text-gray-600">Stock Market</p>
           </div>
           <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />{" "}
-            <p className="text-gray-600 font-semibold">International</p>
+            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+            <p className="text-gray-600">International</p>
           </div>
           <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />{" "}
-            <p className="text-gray-600 font-semibold">Market</p>
+            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+            <p className="text-gray-600">Market</p>
           </div>
           <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />{" "}
-            <p className="text-gray-600 font-semibold">Currency Exchange</p>
+            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+            <p className="text-gray-600">Currency Exchange</p>
           </div>
           <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />{" "}
-            <p className="text-gray-600 font-semibold">Trading</p>
+            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+            <p className="text-gray-600">Trading</p>
           </div>
         </div>
       </div>

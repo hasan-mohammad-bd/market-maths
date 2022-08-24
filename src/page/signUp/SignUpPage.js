@@ -118,7 +118,7 @@ const SignUpPage = () => {
             <div className="flex items-center">
 
             <input className='w-5 h-4 mr-2' type="checkbox" id="terms" name="terms" value="terms"/>
-  <span className="text-[14px]" for="terms">I agree to <label className="text-blue-500 cursor-pointer" for="my-modal-6" class="">terms and conditions and privacy and policy </label></span>
+  <span className="text-[14px]" for="terms">I agree to <label for="my-modal-6" class=""><span className="text-blue-500 cursor-pointer">terms and conditions and privacy and policy </span></label></span>
             </div>
             
             <div className="logo-submit mt-10 flex justify-between items-center my-2">

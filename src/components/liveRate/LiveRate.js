@@ -14,7 +14,7 @@ const LiveRate = () => {
               </h2>
               <Line />
               <p className="fond-semibold text-[18px] text-white my-5">
-                You can relay on our amazing features list and also our customer{" "}
+                You can relay on our amazing features list and also our customer
                 <br /> services will be great experience for you without doubt
                 and in <br /> no-time
               </p>
