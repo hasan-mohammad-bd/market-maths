@@ -20,7 +20,7 @@ const LiveRate = () => {
               </p>
             </div>
             <div className="live-currency-rate">
-                <p className="text-white">Live currency rate</p>
+            <iframe className="bg-black" height="380" width="480" src="https://www.forextime.com/widgets/live-rates" title="description"></iframe>
             </div>
           </div>
         </div>

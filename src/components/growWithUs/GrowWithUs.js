@@ -1,6 +1,7 @@
 import React from "react";
 import Line from "../line/Line";
 import cheart from '../../image/cheart.png';
+import ForexScreener from "./ForexScreener";
 
 const GrowWithUs = () => {
   return (
@@ -18,7 +19,7 @@ const GrowWithUs = () => {
           </p>
         </div>
         <div className="chart">
-            <img className="mx-auto w-100" src={cheart} alt="" />
+            <ForexScreener/>
         </div>
       </div>
     </>

@@ -4,6 +4,7 @@ import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
 import aboutCover from "../../image/forex-calendar.jpg";
 import Line from "../../components/line/Line";
 import calendar from "../../image/Forex-calendar.png";
+import ForexCalenderChart from "./ForexCalenderChart";
 
 const ForexCalendar = () => {
   return (
@@ -64,9 +65,8 @@ const ForexCalendar = () => {
           </p>
         </div>
       </div>
-      <div className="chart my-12">
-        {/* demo */}
-        <img className="w-100 mx-auto" src={calendar} alt="" />
+      <div className="chart my-12 container mx-auto">
+        <ForexCalenderChart/>
       </div>
     </>
   );

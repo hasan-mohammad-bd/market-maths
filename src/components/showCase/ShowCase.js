@@ -21,7 +21,7 @@ const ShowCase = () => {
             </div>
 
             <div className="form">
-              <p>this is form area</p>
+            <iframe className="bg-black" height="370" width="480" src="https://www.forextime.com/widgets/profit-calculator" title="description"></iframe>
             </div>
           </div>
         </div>

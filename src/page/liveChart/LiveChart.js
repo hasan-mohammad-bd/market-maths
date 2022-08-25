@@ -4,6 +4,9 @@ import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
 import aboutCover from "../../image/forex-chart3.jpg";
 import Line from '../../components/line/Line';
 import FX_chart from '../../image/FX_chart_main.png'
+import ForexLiveChart from './ForexLiveChart';
+import TechnicalAnalisisChart from './TechnicalAnalisisChart';
+import MiniChartUSDEU from './MiniChartUSDEU';
 
 const LiveChart = () => {
     return (
@@ -49,7 +52,7 @@ const LiveChart = () => {
           FX Live Charts
         </NavLink>
       </div>
-      <div className="mx-auto text-center py-8 container mx-auto">
+      <div className="text-center py-8">
         <div className="text text-gray-700">
           <h2 className="text-[38px] font-semibold">
             <span className="text-[#DAA106]">FX</span> Live Charts 
@@ -62,9 +65,13 @@ const LiveChart = () => {
           </p>
         </div>
         </div>
-           <div className="chart">
+           <div className="chart container mx-auto">
             {/* demo */}
-            <img className='w-100 mx-auto' src={FX_chart} alt="" />
+            <div className="flex flex-col lg:flex-row">
+              <div className=''><ForexLiveChart/></div>
+              <div><MiniChartUSDEU/><TechnicalAnalisisChart/></div>
+            </div>
+
             </div> 
         </>
     );
