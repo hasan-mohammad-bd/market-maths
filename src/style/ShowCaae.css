@@ -8,7 +8,7 @@
 
 .cover-pic{
     background-image: url(../image/show-case.jpg);
-    height: 80vh;
+    /* height: 80vh; */
     width: 100%;
     background-position: center;
     background-size: cover;

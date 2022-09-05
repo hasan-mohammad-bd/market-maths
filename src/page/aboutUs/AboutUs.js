@@ -25,8 +25,8 @@ const AboutUs = () => {
               <h3 className="mb-3 text-[38px] font-semibold text-white">
                 About Us
               </h3>
-              <p className="text-white">
-                Our goal here is to provide low prices on accurate signal <br />
+              <p className="text-white max-w-[600px]">
+                Our goal here is to provide low prices on accurate signal
                 and excellent service.
               </p>
             </div>
@@ -52,15 +52,15 @@ const AboutUs = () => {
           About Us
         </NavLink>
       </div>
-      <div className="mx-auto text-center py-8 container mx-auto border-about">
+      <div className="mx-auto text-center py-8 container border-about">
         <div className="text text-gray-700">
           <h2 className="text-[38px] font-semibold">
             <span className="text-[#DAA106]">Who</span> We Are 
           </h2>
           <div className="flex justify-center">
           </div>
-          <p className="font-semibold text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi <br /> rerum at quam, beatae reprehenderit perferendis sapiente vel corrupti atque.
+          <p className="font-semibold text-[18px] max-w-[600px] mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi rerum at quam, beatae reprehenderit perferendis sapiente vel corrupti atque.
           </p>
         </div>
         </div>

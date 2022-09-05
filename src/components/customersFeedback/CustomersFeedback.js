@@ -11,7 +11,7 @@ import Feedback3 from "./Feedback3";
 const CustomersFeedback = () => {
   return (
     <>
-      <div className="cover-pic4">
+      <div className="cover-pic4 px-3 md:px-0">
         <div className="grow-with-us mx-auto text-center py-16 text-white">
           <div className="text">
             <h2 className="text-[38px] font-semibold">
@@ -21,9 +21,9 @@ const CustomersFeedback = () => {
             <div className="flex justify-center">
               <Line className="mb-3" />
             </div>
-            <p className="mb-20 font-semibold text-[18px]">
+            <p className="mb-20 font-semibold text-[18px] max-w-[500px] mx-auto">
               You can relay on our amazing features list and also our customer
-              services will be <br /> great experience for you without doubt and
+              services will be great experience for you without doubt and
               in no-time
             </p>
           </div>

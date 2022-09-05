@@ -60,16 +60,16 @@ const LiveChart = () => {
           <div className="flex justify-center">
             <Line/>
           </div>
-          <p className="font-semibold text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi <br /> rerum at quam, beatae reprehenderit perferendis sapiente vel corrupti atque.
+          <p className="font-semibold text-[18px] max-w-[600px] mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi  rerum at quam, beatae reprehenderit perferendis sapiente vel corrupti atque.
           </p>
         </div>
         </div>
            <div className="chart container mx-auto">
             {/* demo */}
             <div className="flex flex-col lg:flex-row">
-              <div className=''><ForexLiveChart/></div>
-              <div><MiniChartUSDEU/><TechnicalAnalisisChart/></div>
+              <div className='w-100 flex-1 shrink-0'><ForexLiveChart/></div>
+              <div className='block'><MiniChartUSDEU/><TechnicalAnalisisChart/></div>
             </div>
 
             </div> 

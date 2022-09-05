@@ -11,7 +11,7 @@ import avatar from '../../image/icon/avatar.png';
 const AwesomeFacts = () => {
     return (
         <>
-            <div className="cover-pic3 flex items-center py-12">
+            <div className="cover-pic3 flex items-center py-12 px-3 md:px-0">
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                     <div className="rocket md:ml-16">
                         <div className="image-holder">
@@ -22,7 +22,7 @@ const AwesomeFacts = () => {
                     <div className="text text-center md:text-right text-white mt-16">
                         <h3 className='uppercase font-bold text-[25px]'>The market maths</h3>
                         <h3 className='uppercase text-[#FEB20D] font-bold text-[48px]'>Awesome Facts</h3>
-                        <h3 className='font-semibold text-[18px]'>You can relay on our amazing features list and also our <br /> customer services will be great experience for you <br /> without doubt and in no-time</h3>
+                        <h3 className='font-semibold text-[18px] ml-auto max-w-[500px]'>You can relay on our amazing features list and also our  customer services will be great experience for you  without doubt and in no-time</h3>
                         <div className="achievement grid grid-cols-2 md:grid-cols-4 mt-8">
                             <div className="signal lg:ml-16 mx-auto lg:mr-auto">
                                 <div className="flex w-[120px] justify-between items-center">

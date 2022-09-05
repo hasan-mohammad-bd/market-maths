@@ -9,7 +9,7 @@ import SingleMember4 from "./SingleMember4";
 const ManagementTeam = () => {
   return (
     <>
-      <div className="management-team mx-auto text-center py-16 container mx-auto">
+      <div className="management-team text-center py-16 container mx-auto">
         <div className="text">
           <h2 className="text-[38px] font-semibold">
             Best <span className="text-[#DAA106]">Management Team</span>
@@ -17,8 +17,8 @@ const ManagementTeam = () => {
           <div className="flex justify-center">
             <Line className="mb-3" />
           </div>
-          <p className="mb-10 font-semibold text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          <p className="mb-10 font-semibold text-[18px] max-w-[600px] mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus pariatur ipsum assumenda, tempora facere non quo
             explicabo officia optio ut!
           </p>

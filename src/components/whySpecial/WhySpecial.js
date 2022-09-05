@@ -12,7 +12,7 @@ import SmallLine from "../line/SmallLine";
 const WhySpecial = () => {
   return (
     <>
-      <div className="bg-[#F3F3F5]">
+      <div className="bg-[#F3F3F5] px-3 md:px-0 my-4 md:my-0">
         <div className="container mx-auto text-center py-16">
           <h2 className="text-[38px] font-semibold">
             Why We Are <span className="text-[#DAA106]">Special</span>
@@ -20,9 +20,9 @@ const WhySpecial = () => {
           <div className="flex justify-center">
             <Line className="mb-3" />
           </div>
-          <p className="mb-10 font-semibold text-[18px]">
+          <p className="mb-10 font-semibold text-[18px] max-w-[500px] mx-auto">
             You can relay on our amazing features list and also our customer
-            services <br /> will be great experience for you without doubt and
+            services will be great experience for you without doubt and
             in no-time
           </p>
 

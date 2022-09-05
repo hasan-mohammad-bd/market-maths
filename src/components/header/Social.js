@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { FiLogIn } from "@react-icons/all-files/fi/FiLogIn";
 import SignUpModal from "../signUpModal/SignUpModal";
+import { Link } from "react-router-dom";
 
 
 const Social = () => {
@@ -17,7 +18,7 @@ const Social = () => {
         <div className="social-signup flex justify-between items-center">
           <p>
             Are You New Here? Please
-            <label className="" for="my-modal-5" class=""><span className='underline text-[#DAA106] ml-1'>SignUp</span></label>
+            <Link to="/signup"><span className='underline text-[#DAA106] ml-1'>SignUp</span></Link>
             {/* <span className="underline text-[#DAA106] ml-1">SignUp</span> */}
           </p>
           <div className="social-icon text-[18px] ml-10 flex justify-between">

@@ -58,9 +58,9 @@ const ForexCalendar = () => {
           <div className="flex justify-center">
             <Line />
           </div>
-          <p className="font-semibold text-[18px]">
+          <p className="font-semibold text-[18px] max-w-[600px] mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi
-            <br /> rerum at quam, beatae reprehenderit perferendis sapiente vel
+            rerum at quam, beatae reprehenderit perferendis sapiente vel
             corrupti atque.
           </p>
         </div>
