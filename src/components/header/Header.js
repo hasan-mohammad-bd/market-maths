@@ -37,7 +37,7 @@ const Header = () => {
           <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/">Home</NavLink>
           <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/about">About Us</NavLink>
           <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/live">FX Live Charts</NavLink>
-          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/calender">Forex Calender</NavLink>
+          <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/calendar">Forex Calender</NavLink>
           <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/blog">Blog</NavLink>
           <NavLink className={({isActive}) => (isActive? "hactiveRoute" : "hinactiveRoute")} to="/contact">Contact Us</NavLink>
           <NavLink className="login flex items-center " to="/login"><span className='mr-2'><FiLogIn/></span> log In</NavLink>

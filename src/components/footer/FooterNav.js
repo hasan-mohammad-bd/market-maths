@@ -9,7 +9,7 @@ const FooterNav = () => {
           <div className="copy-right-text text-gray-600 text-[14px]">
             <p>&copy; Market Maths. All Right Reserved</p>
           </div>
-          <div className="text-center md:text-start mt-4 md:mt-0 uppercase text-[16px] font-semibold text-[#092744]">
+          <div className="text-center hidden md:block md:text-start mt-4 md:mt-0 uppercase text-[16px] font-semibold text-[#092744]">
             <Link className="ml-10" to='/home'>Home</Link>
             <Link className="ml-10" to='/about'>About</Link>
             <Link className="ml-10" to='/'>Terms & condition</Link>

@@ -10,7 +10,7 @@ import TermsConditionsModal from '../../components/termsConditions/TermsConditio
 const SignUpPage = () => {
     return (
         <>
-        <div class="w-[500px] mx-auto my-16 p-10 bg-[#F3F3F5]" for="">
+        <div class="max-w-[500px] mx-auto my-16 p-10 bg-[#F3F3F5]" for="">
           <h3 class="text-lg font-bold text-center mt-8 mb-3">
             Sign Up Account
           </h3>
@@ -21,7 +21,7 @@ const SignUpPage = () => {
           <form action="">
             <div className="flex flex-col justify-content items-center relative font-normal">
               <div className="icon flex items-center justify-center text-[20px] absolute left-[20px] top-[8px] ">
-                <span className="block mt-[5px]">
+                <span className="block">
                   <FaUserAlt />
                 </span>
                 <span className="mx-4 ">|</span>
@@ -35,7 +35,7 @@ const SignUpPage = () => {
             </div>
             <div className="flex flex-col justify-content items-center relative font-normal">
               <div className="icon flex items-center justify-center text-[20px] absolute left-[20px] top-[8px] ">
-                <span className="block mt-[5px]">
+                <span className="block">
                   <FaUserAlt />
                 </span>
                 <span className="mx-4 ">|</span>
@@ -49,7 +49,7 @@ const SignUpPage = () => {
             </div>
             <div className="flex flex-col justify-content items-center relative font-normal">
               <div className="icon flex items-center justify-center text-[20px] absolute left-[20px] top-[8px] ">
-                <span className="block mt-[5px]">
+                <span className="block">
                   <AiOutlineMail />
                 </span>
                 <span className="mx-4 ">|</span>
@@ -89,7 +89,7 @@ const SignUpPage = () => {
             </div>
             <div className="flex flex-col justify-content items-center relative">
               <div className="icon flex items-center justify-center text-[20px] absolute left-[20px] top-[8px] ">
-                <span className="block mt-[5px]">
+                <span className="block">
                   <AiFillLock />
                 </span>
                 <span className="mx-4 ">|</span>
@@ -103,7 +103,7 @@ const SignUpPage = () => {
             </div>
             <div className="flex flex-col justify-content items-center relative">
               <div className="icon flex items-center justify-center text-[20px] absolute left-[20px] top-[8px] ">
-                <span className="block mt-[5px]">
+                <span className="block">
                   <AiFillLock />
                 </span>
                 <span className="mx-4 ">|</span>
