@@ -3,12 +3,12 @@ import Header from './Header';
 import Navbar from './Navbar';
 import Social from './Social';
 
-const FullHeader = () => {
+const FullHeader = ({user, setUser}) => {
     return (
         <>
             <Social/>
             <Header/>
-            <Navbar/>
+            <Navbar user={user} setUser={setUser}/>
         </>
     );
 };
