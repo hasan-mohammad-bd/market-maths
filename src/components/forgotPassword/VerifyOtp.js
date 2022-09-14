@@ -4,13 +4,13 @@ import { FaFingerprint } from "@react-icons/all-files/fa/FaFingerprint";
 import { AiTwotonePhone } from "@react-icons/all-files/ai/AiTwotonePhone";
 import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
 import { useNavigate } from "react-router-dom";
-import TermsConditionsModal from "../../components/termsConditions/TermsConditionsModal";
+import TermsConditionsModal from "../termsConditions/TermsConditionsModal";
 import { toast } from 'react-toastify';
 import 'react-phone-number-input/style.css'
 import { API_URL } from "../common/constants";
 
 
-const VerifyAccount = ({value}) => {
+const VerifyOtp = ({value2}) => {
   const navigate = useNavigate()
   const [phone, setPhone] = useState("");
   const [code, setCode] = useState("");
@@ -27,14 +27,14 @@ const VerifyAccount = ({value}) => {
     event.preventDefault();
     const verify = {
 
-      phone: value || phone,
+      phone: value2 || phone,
       code: code
       
     }
     console.log(verify);
 
 
-      fetch(`${API_URL}auth/phone/verify`, {
+      fetch(`${API_URL}auth/forgot_pass/verify`, {
         method: "POST",
         headers: {
 
@@ -47,7 +47,7 @@ const VerifyAccount = ({value}) => {
   
           if (data.status) {
             toast.success(`${data.message}`);
-            navigate('/login')
+            navigate('/new-password')
           }
           else{
             toast.error(`${data.message}`)
@@ -59,11 +59,11 @@ const VerifyAccount = ({value}) => {
   const handleResendCode = (event) => {
     event.preventDefault();
     const resend = {
-      phone: phone || value
+      phone: phone || value2
     }
     console.log(resend);
 
-    fetch(`${API_URL}auth/otp/resend`, {
+    fetch(`${API_URL}auth/forgot_pass`, {
         method: "POST",
         headers: {
           // authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -103,7 +103,7 @@ const VerifyAccount = ({value}) => {
             </div>
             <input
               onBlur={handlePhoneBlur}
-              defaultValue={value && value}
+              defaultValue={value2 && value2}
               placeholder="Phone Number"
               className="pl-[80px] block h-[50px] w-full mx-auto p-2 mb-2 outline-none border "
               type="text"
@@ -160,4 +160,4 @@ const VerifyAccount = ({value}) => {
   );
 };
 
-export default VerifyAccount;
+export default VerifyOtp;

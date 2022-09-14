@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import '../../style/Header.css'
 import { FiLogIn } from "@react-icons/all-files/fi/FiLogIn";
-import LoginModal from '../loginModal/LoginModal';
-import SignUpModal from '../signUpModal/SignUpModal';
+
 import { ACCESS_TOKEN } from '../common/constants';
 import { useState } from 'react';
 
@@ -23,8 +22,7 @@ const Navbar = ({user,setUser}) => {
     return (
         <>
             <div className="container mx-auto font-semibold py-3 mr-24 hidden md:block">
-            <LoginModal/>
-            <SignUpModal/>
+
                 <nav className='flex justify-end items-center'>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/">Home</NavLink>
                 <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/about">About Us</NavLink>

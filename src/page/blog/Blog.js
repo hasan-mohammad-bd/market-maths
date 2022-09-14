@@ -11,8 +11,29 @@ import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import "../../style/BlogPage.css";
 import SingleBlog from "./SingleBlog";
 import SingleBlog2 from "./SingleBlog2";
+import { useState } from "react";
+import { useEffect } from "react";
+import { API_URL_WEBSITE } from "../../components/common/constants";
 
 const Blog = () => {
+  const [blogCat, setBlogCat] = useState([]);
+  const [blogList, setBlogList] = useState([]);
+  const [blogDetails, setBlogDetails] = useState([]);
+  const [page, setPage] = useState([]);
+  const [currentPage, setCurrentPage] = useState([])
+
+
+  useEffect(()=>{
+    fetch(`${API_URL_WEBSITE}blog/post?limit=2&page=${currentPage + 1}`)
+    .then(res => res.json())
+    .then(data => {
+      if(data.status){
+        setPage(data.total_pages);
+        blogList(data.data)
+      }
+    })
+  },[])
+
   return (
     <>
       <div
@@ -235,6 +256,12 @@ const Blog = () => {
         <div className="blogs flex-1 ml-0 lg:ml-16">
           <SingleBlog/>
           <SingleBlog2/>
+          <div className="pagination mx-auto text-center">
+          {
+            [...Array(page).keys()].map(number => <button className={`${currentPage === number? "bg-slate-400": "bg-slate-600"} text-white text-center py-2 px-4 border rounded font-semibold`} onClick={()=>setCurrentPage(number)} >{number + 1}</button>)
+          }
+          </div>
+
         </div>
       </div>
     </>

@@ -117,7 +117,7 @@ const LoginPage = ({user, setUser}) => {
               required
             />
           </div>
-          <p className="text-end">Forgot Password?</p>
+          <NavLink to="/forgot-password"><p className="text-end pointer">Forgot Password?</p></NavLink>
           <div className="logo-submit flex justify-between items-center my-2">
             <div className="login-btn">
               <input

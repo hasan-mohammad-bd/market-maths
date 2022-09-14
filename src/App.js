@@ -14,19 +14,52 @@ import LoginPage from "./page/loginPage/LoginPage";
 import SignUp from "./page/signUp/SignUpPage";
 import 'react-toastify/dist/ReactToastify.css';
 
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import VerifyAccount from "./components/verifyAccount/VerifyAccount";
-
+import ForgotPassword from "./components/forgotPassword/ForgotPassword";
+import VerifyOtp from "./components/forgotPassword/VerifyOtp";
+import NewPassword from "./components/forgotPassword/NewPassword";
+import { createContext } from "react";
+import { useQuery } from "react-query";
+import { API_URL_WEBSITE } from "./components/common/constants";
+import { useEffect } from "react";
+export const DataContext = createContext('data');
 
 const App = () => {
   const [value, setValue] = useState('');
+  const [value2, setValue2] = useState('');
   const [user, setUser] = useState('');
-  console.log(user);
+  const [home, setHome] = useState([]);
+  const [home2, setHome2] = useState([]);
+  const [home3, setHome3] = useState([]);
+  const [aboutPage, setAboutPage] = useState([]);
 
-  
+
+
+  useEffect(()=>{
+    fetch(`${API_URL_WEBSITE}home`)
+    .then(res => res.json())
+    .then(data => setHome(data.data))
+
+    fetch(`${API_URL_WEBSITE}home/api2`)
+    .then(res => res.json())
+    .then(data => setHome2(data.data))
+
+    fetch(`${API_URL_WEBSITE}home/constant`)
+    .then(res => res.json())
+    .then(data => setHome3(data.data))
+
+    fetch(`${API_URL_WEBSITE}about_us`)
+    .then(res => res.json())
+    .then(data => setAboutPage(data.data))
+
+
+  },[])
+
   return (
     <>
-      <FullHeader user={user} setUser={setUser}/>
+    <DataContext.Provider value={[home, home2, home3, aboutPage]}>
+    <FullHeader user={user} setUser={setUser}/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
@@ -40,10 +73,15 @@ const App = () => {
         <Route path="/blog-details" element={<BlogDetails/>}></Route>
         <Route path="/login" element={<LoginPage user={user} setUser={setUser} />}></Route>
         <Route path="/verify" element={<VerifyAccount value={value}/>}></Route>
+        <Route path="/verifyOtp" element={<VerifyOtp value2={value2}/>}></Route>
+        <Route path="/new-password" element={<NewPassword value2={value2}/>}></Route>
+        <Route path="/forgot-password" element={<ForgotPassword value2={value2} setValue2={setValue2}/>}></Route>
         <Route path="/signup" element={<SignUp value={value} setValue={setValue}/>}></Route>pp
       </Routes>
       <Footer/>
       <ToastContainer />
+    </DataContext.Provider>
+
       
     </>
   );
