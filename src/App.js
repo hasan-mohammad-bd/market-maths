@@ -23,6 +23,8 @@ import { createContext } from "react";
 import { useQuery } from "react-query";
 import { API_URL_WEBSITE } from "./components/common/constants";
 import { useEffect } from "react";
+import SingleBlog from "./page/blog/SingleBlog";
+import BlogList from "./page/blog/BlogList";
 export const DataContext = createContext('data');
 
 const App = () => {
@@ -33,6 +35,13 @@ const App = () => {
   const [home2, setHome2] = useState([]);
   const [home3, setHome3] = useState([]);
   const [aboutPage, setAboutPage] = useState([]);
+  const [page, setPage] = useState([]);
+  const [currentPage, setCurrentPage] = useState([]);
+  const [blogList, setBlogList] = useState([]);
+  const [cat, setCat] = useState([]);
+  const [currentCategory, setCurrentCategory] = useState('');
+  const [id, setId] = useState('')
+
 
 
 
@@ -44,6 +53,7 @@ const App = () => {
     fetch(`${API_URL_WEBSITE}home/api2`)
     .then(res => res.json())
     .then(data => setHome2(data.data))
+    console.log(home2);
 
     fetch(`${API_URL_WEBSITE}home/constant`)
     .then(res => res.json())
@@ -53,12 +63,36 @@ const App = () => {
     .then(res => res.json())
     .then(data => setAboutPage(data.data))
 
+    fetch(`${API_URL_WEBSITE}blog/cat`)
+    .then(res => res.json())
+    .then(data => setCat(data.data.category_list))
 
   },[])
 
+  useEffect(()=>{
+    fetch(`${API_URL_WEBSITE}blog/post?category=${currentCategory}&limit=2&page=${currentPage + 1}`)
+    .then(res => res.json())
+    .then(data => {
+      if(data.status){
+        setPage(data.total_pages);
+        setBlogList(data.data)
+      }
+    })
+  },[currentPage, currentCategory])
+/*   useEffect(()=>{
+    fetch(`${API_URL_WEBSITE}blog/post?category=${currentCategory}&limit=2&page=${currentPage + 1}`)
+    .then(res => res.json())
+    .then(data => {
+      if(data.status){
+        setPage(data.total_pages);
+        setBlogList(data.data)
+      }
+    })
+  },[id]) */
+
   return (
     <>
-    <DataContext.Provider value={[home, home2, home3, aboutPage]}>
+    <DataContext.Provider value={{home, home2, home3, aboutPage, page, blogList, setCurrentPage, currentPage, cat, setCurrentCategory}}>
     <FullHeader user={user} setUser={setUser}/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -68,7 +102,9 @@ const App = () => {
         <Route path="/live" element={<LiveChart/>}></Route>
         <Route path="/calendar" element={<ForexCalendar/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
-        <Route path="/blog" element={<Blog/>}></Route>
+        <Route path="/blog" element={<Blog/>}>
+          <Route index element={<BlogList></BlogList>}></Route><Route path="blog-details/:id" element={<BlogList></BlogList>}></Route>
+        </Route>
 
         <Route path="/blog-details" element={<BlogDetails/>}></Route>
         <Route path="/login" element={<LoginPage user={user} setUser={setUser} />}></Route>

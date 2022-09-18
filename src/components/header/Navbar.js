@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import '../../style/Header.css'
 import { FiLogIn } from "@react-icons/all-files/fi/FiLogIn";
-
 import { ACCESS_TOKEN } from '../common/constants';
 import { useState } from 'react';
 

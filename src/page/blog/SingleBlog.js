@@ -9,40 +9,33 @@ import blog6 from "../../image/blog-pic-6.jpg";
 import { AiOutlineArrowRight } from "@react-icons/all-files/ai/AiOutlineArrowRight";
 import { FaComment } from "@react-icons/all-files/fa/FaComment";
 import { NavLink } from 'react-router-dom';
+import moment from "moment";
 
-const SingleBlog = () => {
+const SingleBlog = ({singleBlog}) => {
+  console.log(singleBlog);
+  const {createdAt,description,image,title,user_id, views, _id}= singleBlog;
     return (
         <>
                       <div className="single-blog-page lg:my-8">
             <div
               style={{
-                background: `url(${blog6})`,
+                background: `url(${image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="w-100 md:h-[500px]"
+              className="w-100 h-[300px] md:h-[400px]"
             ></div>
             <h3 className="text-gray-700 my-6 font-semibold text-[28px]">
-              4 Effective Trading Indicator Every Trader Should Know
+              {title}
             </h3>
             <div className="date text-gray-500 text-[14px]">
               <p>
-                Posted on <span>21 March , 2022</span>
+                Posted on <span>{moment(createdAt).format("MMMM Do YYYY")}</span>
                 <span className="ml-3 text-[#DAA106]">/FOREX</span>
               </p>
             </div>
             <p className="my-4">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              exercitationem provident voluptatum? Voluptate consequatur odit
-              ipsa. Aliquam at, natus iste, amet earum quasi eligendi, ratione
-              dolorem provident beatae voluptates minima excepturi optio
-              laudantium suscipit cupiditate. Corporis dicta nisi minus
-              perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Nemo,Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quo saepe repellat voluptas expedita voluptates accusamus
-              officiis necessitatibus obcaecati, voluptate fuga deserunt
-              asperiores quasi neque? Dicta, vitae. Eius aliquid adipisci
-              doloribus! perspiciatis...
+              {description.slice(0,700)}...
             </p>
             <NavLink
               className="bg-white border border-[orange] text-[orange] px-[15px] py-[5px] justify-around flex max-w-[150px] items-center read-btn"

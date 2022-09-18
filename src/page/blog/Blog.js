@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import cover from "../../image/blogs-page-cover.jpg";
 import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
 import ExtraSmallLine from "../../components/line/ExtraSmallLine";
@@ -14,25 +14,32 @@ import SingleBlog2 from "./SingleBlog2";
 import { useState } from "react";
 import { useEffect } from "react";
 import { API_URL_WEBSITE } from "../../components/common/constants";
+import { useContext } from "react";
+import { DataContext } from "../../App";
 
 const Blog = () => {
   const [blogCat, setBlogCat] = useState([]);
-  const [blogList, setBlogList] = useState([]);
+  // const [blogList, setBlogList] = useState([]);
   const [blogDetails, setBlogDetails] = useState([]);
-  const [page, setPage] = useState([]);
-  const [currentPage, setCurrentPage] = useState([])
+  // const [page, setPage] = useState([]);
+  // const [currentPage, setCurrentPage] = useState([])
 
 
-  useEffect(()=>{
+/*   useEffect(()=>{
     fetch(`${API_URL_WEBSITE}blog/post?limit=2&page=${currentPage + 1}`)
     .then(res => res.json())
     .then(data => {
       if(data.status){
         setPage(data.total_pages);
-        blogList(data.data)
+        setBlogList(data.data)
       }
     })
-  },[])
+  },[]) */
+
+  const { page, setCurrentPage, currentPage, cat, setCurrentCategory} = useContext(DataContext);
+
+
+
 
   return (
     <>
@@ -85,54 +92,19 @@ const Blog = () => {
             </h3>
             <ExtraSmallLine />
             <ul>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Digital Trading</p></NavLink>
-                <p className="text-gray-500">(3)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Forex</p></NavLink>
-                <p className="text-gray-500">(3)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Stock Market</p></NavLink>
-                <p className="text-gray-500">(8)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">International</p></NavLink>
-                <p className="text-gray-500">(5)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Market</p></NavLink>
-                <p className="text-gray-500">(4)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Currency Exchange</p></NavLink>
-                <p className="text-gray-500">(2)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Trading</p></NavLink>
-                <p className="text-gray-500">(3)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Freelance</p></NavLink>
-                <p className="text-gray-500">(3)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Digital Trading</p></NavLink>
-                <p className="text-gray-500">(4)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Local Market</p></NavLink>
-                <p className="text-gray-500">(5)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">Analysis</p></NavLink>
-                <p className="text-gray-500">(6)</p>
-              </li>
-              <li className="flex items-center justify-between py-3 border-b-[1px]">
-                <NavLink to='/blog-details'><p className="text-gray-600">World Trade</p></NavLink>
-                <p className="text-gray-500">(2)</p>
-              </li>
+            <li className="flex cursor-pointer items-center justify-between py-3 border-b-[1px]">
+                  <p onClick={()=>setCurrentCategory('')} className="text-gray-600 pointer">All</p>
+
+                  </li>
+              {
+                cat.map(c => 
+
+                  <li className="flex cursor-pointer items-center justify-between py-3 border-b-[1px]">
+                  <p onClick={()=>setCurrentCategory(c.name.replace(' ', '-'))} className="text-gray-600">{c.name}</p>
+                  <p className="text-gray-500">({c.count})</p>
+                </li>
+                )
+              }
 
             </ul>
           </div>
@@ -254,9 +226,10 @@ const Blog = () => {
           </div>
         </div>
         <div className="blogs flex-1 ml-0 lg:ml-16">
-          <SingleBlog/>
-          <SingleBlog2/>
-          <div className="pagination mx-auto text-center">
+{/*           <SingleBlog/>
+          <SingleBlog2/> */}
+          <Outlet/>
+          <div className={`${page < 2 && "hidden"} pagination mx-auto text-center`}>
           {
             [...Array(page).keys()].map(number => <button className={`${currentPage === number? "bg-slate-400": "bg-slate-600"} text-white text-center py-2 px-4 border rounded font-semibold`} onClick={()=>setCurrentPage(number)} >{number + 1}</button>)
           }

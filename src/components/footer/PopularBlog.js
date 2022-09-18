@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import ExtraSmallLine from "../line/ExtraSmallLine";
 import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
+import { DataContext } from "../../App";
 
 const PopularBlog = () => {
+
+  const { home3 } = useContext(DataContext);
   return (
     <>
       <div className="popular-category mb-8 md:mb-0">
@@ -11,11 +14,17 @@ const PopularBlog = () => {
         </h3>
         <ExtraSmallLine className="mb-3" />
         <div className="list text-[14px]">
-          <div className="flex items-center my-2">
-            <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
-            <p className="text-gray-600">Trading Psychology and Money ..</p>
-          </div>
-          <div className="flex items-center my-2">
+          {
+            home3?.popular_blog?.map(b => 
+              <div className="flex items-center my-2">
+              <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
+              <p className="text-gray-600">{b.name}</p>
+            </div>
+              
+              )
+          }
+
+{/*           <div className="flex items-center my-2">
             <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
             <p className="text-gray-600">Doing daily chores can h..</p>
           </div>
@@ -38,7 +47,7 @@ const PopularBlog = () => {
           <div className="flex items-center my-2">
             <IoIosArrowForward className="text-[#DAA106] mr-2 font-semibold" />
             <p className="text-gray-600">But I must explain to mis..</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
