@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import logo from "../../image/logo.png";
 import "../../style/Header.css";
 import { MdPlace } from "@react-icons/all-files/md/MdPlace";
@@ -8,9 +8,12 @@ import { RiMenu3Fill } from "@react-icons/all-files/ri/RiMenu3Fill";
 import { AiOutlineCloseSquare } from "@react-icons/all-files/ai/AiOutlineCloseSquare";
 import { NavLink } from "react-router-dom";
 import { FiLogIn } from "@react-icons/all-files/fi/FiLogIn";
+import { DataContext } from "../../App";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+
+  const { home3 } = useContext(DataContext);
 
 
 
@@ -47,21 +50,21 @@ const Header = () => {
             <div className="flex justify-center items-center">
               <MdPlace className="text-[30px] text-[#FEB20D]" />
               <div className="flex flex-col ml-2 text-[14px] font-semibold">
-                <p>Jalabad, Shanker Road</p>
+                <p>{home3?.constant?.address}</p>
                 <p className="text-[#A099AC]">Malasia 1260</p>
               </div>
             </div>
             <div className="flex justify-center items-center">
               <MdCall className="text-[30px] text-[#FEB20D]" />
               <div className="flex flex-col ml-2 text-[14px] font-semibold">
-                <p>+123-456-78900</p>
+                <p>{home3?.constant?.phone}</p>
                 <p className="text-[#A099AC]">27/7 Help line</p>
               </div>
             </div>
             <div className="flex justify-center items-center">
               <AiOutlineMail className="text-[30px] text-[#FEB20D]" />
               <div className="flex flex-col ml-2 text-[14px] font-semibold">
-                <p>marketmaths@gmail.com</p>
+                <p>{home3?.constant?.email}</p>
                 <p className="text-[#A099AC]">For Any Query</p>
               </div>
             </div>
